@@ -1,0 +1,17 @@
+Home - Desktop = 2 hour;
+Shop = 1 hour;
+Product = 1.5 hour
+
+Contact = 22 minutes
+Account = 10 minutes
+ResetPassword = 5 minutes
+Blog = 30 minutes
+About = 10 minutes
+Blog-Single = 2 hour
+
+- PC = 8 hour
+
+- Mob (1 part) = 3.5 hour
+- Mob (2 part) = 4 hour
+
+TOTAL: 8 + 7.5 = 15.5 hours

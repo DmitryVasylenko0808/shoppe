@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="media.css" rel="stylesheet">
+    <title>Shoppe</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="_container">
+            <div class="header-content _line">
+                <a href="index.html" class="header-content__logo">
+                    <div><span>S</span>HOPPE</div>
+                </a>
+                <nav class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item"><a class="header-nav__link" href="shop.html">Shop</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link" href="blog.html">Blog</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link" href="about.html">Our Story</a></li>
+                    </ul>
+                </nav>
+                <div class="header-content__line"></div>
+                <div class="header-icons">
+                    <a class="header-icons__a" href="#" id="search">
+                        <img class="header-icons__img" src="./assets/header/search.svg" alt="search" />
+                    </a>
+                    <a class="header-icons__a" href="#" id="cart">
+                        <img class="header-icons__img" src="./assets/header/cart.svg" alt="cart" />
+                    </a>
+                    <a class="header-icons__a" href="myaccount.html" id="login">
+                        <img class="header-icons__img" src="./assets/header/login.svg" alt="login" />
+                    </a>
+                </div>
+                <div class="header-mob-container">
+                    <a class="header-mob-nav _display" href="#">
+                        <img src="./assets/mobmenu.svg" alt="mob-menu"/>
+                    </a>
+                </div>
+                <div class="mob-menu">
+                    <nav class="mob-menu__nav">
+                        <ul class="mob-menu__list">
+                            <li class="mob-menu__item"><a class="mob-menu__link" href="index.html">Home</a></li>
+                            <li class="mob-menu__item"><a class="mob-menu__link" href="shop.html">Shop</a></li>
+                            <li class="mob-menu__item"><a class="mob-menu__link" href="about.html">About</a></li>
+                            <li class="mob-menu__item"><a class="mob-menu__link" href="blog.html">Blog</a></li>
+                            <li class="mob-menu__item"><a class="mob-menu__link" href="#">Help</a></li>
+                            <li class="mob-menu__item"><a class="mob-menu__link" href="shop.html">Contact</a></li>
+                        </ul>
+                        <hr />
+                        <ul class="mob-menu__list">
+                            <li class="mob-menu__item">
+                                <a class="mob-menu__link" href="myaccount.html"><img src="./assets/account-mob.svg" alt="account" />My account</a>
+                            </li>
+                            <li class="mob-menu__item">
+                                <a class="mob-menu__link" href="#"><img src="./assets/logout-mob.svg" alt="logout" />Logout</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main _shop">
+        <section class="shop">
+            <div class="_container">
+                <div class="shop-content">
+                    <div class="latest-head">
+                        <h1 class="latest-head__h1">Shop</h1>
+                    </div>
+                    <div class="shop-columns">
+                        <div class="shop-column">
+                            <div class="input-search">
+                                <input class="input-search__input" placeholder="Search..." />
+                                <a class="input-search__a" href="#">
+                                    <img src="./assets/header/search.svg" alt="search" />
+                                </a>
+                            </div>
+                            <form class="shop-form">
+                                <select class="shop-form__select" name="shop_by" >
+                                    <option value="" disabled selected>Shop by</option>
+                                </select>
+                                <select class="shop-form__select _second" name="sort_by" >
+                                    <option value="" disabled selected>Sort by</option>
+                                </select>
+                                <input class="shop-form__range" type="range" min="0" max="100" value="50"/>
+
+                                <div class="switch-block">
+                                    <span>On sale</span>
+                                    <label class="switch">
+                                        <input name="sale" type="checkbox">
+                                        <span class="slider-check round"></span>
+                                    </label>
+                                </div>
+                                <div class="switch-block">
+                                    <span>In stock</span>
+                                    <label class="switch">
+                                        <input name="stock" type="checkbox">
+                                        <span class="slider-check round"></span>
+                                    </label>
+                                </div>
+                            </form>
+                            <div class="filter-mob">
+                                <a class="filter-mob__a" href="#">
+                                    <img src="./assets/filter.svg" alt="filter" />
+                                    Filters
+                                </a>
+                            </div>
+                        </div>
+                        <div class="shop-column">
+                            <div class="products">
+                                <div class="products__item">
+                                    <div class="products__photo photo1">
+                                        <span>- %21</span>
+                                        <a href="#">
+                                            <img src="./assets/products/shopcart.svg" alt="menu" />
+                                        </a>
+                                        <a href="product.html">
+                                            <img src="./assets/products/eye.svg" alt="menu" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="./assets/products/heart.svg" alt="menu" />
+                                        </a>
+                                    </div>
+                                    <h3 class="products__title">Lira Earrings</h3>
+                                    <span class="products__price">$ 20,00</span>
+                                </div>
+                                <div class="products__item">
+                                    <div class="products__photo photo2">
+                                        <a href="#">
+                                            <img src="./assets/products/shopcart.svg" alt="menu" />
+                                        </a>
+                                        <a href="product.html">
+                                            <img src="./assets/products/eye.svg" alt="menu" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="./assets/products/heart.svg" alt="menu" />
+                                        </a>
+                                    </div>
+                                    <h3 class="products__title">Hal Earrings</h3>
+                                    <span class="products__price">$ 25,00</span>
+                                </div>
+                                <div class="products__item">
+                                    <div class="products__photo photo3">
+                                        <a href="#">
+                                            <img src="./assets/products/shopcart.svg" alt="menu" />
+                                        </a>
+                                        <a href="product.html">
+                                            <img src="./assets/products/eye.svg" alt="menu" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="./assets/products/heart.svg" alt="menu" />
+                                        </a>
+                                    </div>
+                                    <h3 class="products__title">Kaede Hair Pin Set Of 3 </h3>
+                                    <span class="products__price">$ 30,00</span>
+                                </div>
+                                <div class="products__item">
+                                    <div class="products__photo photo4">
+                                        <a href="#">
+                                            <img src="./assets/products/shopcart.svg" alt="menu" />
+                                        </a>
+                                        <a href="product.html">
+                                            <img src="./assets/products/eye.svg" alt="menu" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="./assets/products/heart.svg" alt="menu" />
+                                        </a>
+                                    </div>
+                                    <h3 class="products__title">Hair Pin Set of 3</h3>
+                                    <span class="products__price">$ 30,00</span>
+                                </div>
+                                <div class="products__item">
+                                    <div class="products__photo photo5">
+                                        <span>Sold out</span>
+                                        <a href="#">
+                                            <img src="./assets/products/shopcart.svg" alt="menu" />
+                                        </a>
+                                        <a href="product.html">
+                                            <img src="./assets/products/eye.svg" alt="menu" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="./assets/products/heart.svg" alt="menu" />
+                                        </a>
+                                    </div>
+
+                                    <h3 class="products__title">Plaine Necklace</h3>
+                                    <span class="products__price">$ 19,00</span>
+                                </div>
+                                <div class="products__item">
+                                    <div class="products__photo photo6">
+                                        <a href="#">
+                                            <img src="./assets/products/shopcart.svg" alt="menu" />
+                                        </a>
+                                        <a href="product.html">
+                                            <img src="./assets/products/eye.svg" alt="menu" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="./assets/products/heart.svg" alt="menu" />
+                                        </a>
+                                    </div>
+                                    <h3 class="products__title">Yuki Hair Pin Set of 3</h3>
+                                    <span class="products__price">$ 29,00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="_container">
+            <div class="footer-content">
+                <div class="footer-content-row">
+                    <div class="footer-info">
+                        <a class="footer-info__item" href="contact.html">CONTACT</a>
+                        <a class="footer-info__item" href="#">TERMS OF SERVICES</a>
+                        <a class="footer-info__item" href="#">SHIPPING AND RETURNS</a>
+                    </div>
+                    <input class="footer-content-row__input" placeholder="Give an email, get the newsletter." />
+                </div>
+                <div class="footer-content-row">
+                    <span class="copyright"><span>© 2021 Shelly.</span> Terms of use <span>and</span> privacy
+                        policy.</span>
+                    <div class="social">
+                        <a href="#">
+                            <img src="./assets/footer/linkedin.svg" alt="linkedin" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/footer/facebook.svg" alt="facebook" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/footer/instagram.svg" alt="instagram" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/footer/twitter.svg" alt="twitter" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -8,6 +8,13 @@ const sliderItems = document.querySelectorAll(".slider__item");
 const infoNavLinks = document.querySelectorAll(".info-nav__link");
 const infoItems = document.querySelector(".info-items");
 
+const searchBtn = document.getElementById("search");
+const headerNav = document.querySelector(".header-nav");
+const headerLine = document.querySelector(".header-content__line");
+const headerSearchInput = document.querySelector(".searchHeader");
+
+headerSearchInput.style.display = "none";
+
 mobMenuBtn.onclick = () => {
     if(mobMenuContainer.classList.toggle("show-mob")) {
         mobMenuBtnImg.src = "./assets/close.svg";
@@ -55,4 +62,17 @@ infoNavLinks.forEach((link, index) => {
             }
         }
     }
-})
+});
+
+searchBtn.onclick = () => {
+    if(headerSearchInput.style.display === "none") {
+        headerSearchInput.style.display = "flex";
+
+        searchBtn.children[0].src = "./assets/close.svg";
+    }
+    else {
+        headerSearchInput.style.display = "none";
+
+        searchBtn.children[0].src = "./assets/header/search.svg";
+    }
+}
